@@ -3,7 +3,7 @@ supported_targets:
   - jetson-agx-orin
 
 extensions:
-  avocado-bsp-recomputer-mini-j5012-r39:
+  avocado-bsp-recomputer-mini-j501x:
     version: 0.1.0
     release: r0
     summary: Board support for the Seeed reComputer Mini J5012 on JetPack 7.2 (L4T R39.2.0), carrier extension on jetson-agx-orin
@@ -18,7 +18,7 @@ extensions:
       was not moved; see
       https://github.com/avocado-linux/avocado-os/tree/41c9c39e65/bsp/recomputer-mini-j5012
     license: Apache-2.0
-    url: https://github.com/avocado-linux/bsp-recomputer-mini-j5012-r39
+    url: https://github.com/avocado-linux/bsp-recomputer-mini-j501x
     vendor: Avocado Linux <info@avocadolinux.org>
 
     types:
@@ -34,7 +34,7 @@ extensions:
     # avocado-cli composes the path below into the runtime's effective
     # AVOCADO_STONE_INCLUDE_PATHS, scoped to this extension's location
     # (so for consumers that fetch this BSP as a remote extension, stone
-    # finds the carrier files at $AVOCADO_PREFIX/includes/avocado-bsp-recomputer-mini-j5012-r39/stone/).
+    # finds the carrier files at $AVOCADO_PREFIX/includes/avocado-bsp-recomputer-mini-j501x/stone/).
     stone_include_paths:
       - stone
 

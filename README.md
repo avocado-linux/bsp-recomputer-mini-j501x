@@ -1,4 +1,4 @@
-# bsp-recomputer-mini-j5012-r39
+# bsp-recomputer-mini-j501x
 
 Board support for the Seeed reComputer Mini J5012 (J501 carrier with a Jetson AGX Orin 64GB module) on JetPack 7.2 (L4T R39.2.0).
 
@@ -6,13 +6,13 @@ This extension targets JetPack 7.2 on the 2026 feed only. The JetPack 6.x varian
 
 ## Using this extension
 
-`bsp-recomputer-mini-j5012-r39` is an [Avocado](https://avocadolinux.org) extension, a reusable fragment of
+`bsp-recomputer-mini-j501x` is an [Avocado](https://avocadolinux.org) extension, a reusable fragment of
 build- and runtime-configuration that you compose into your own Avocado project. To use it,
 declare it as a package-sourced extension in your `avocado.yaml` and add it to a runtime:
 
 ```yaml
 extensions:
-  avocado-bsp-recomputer-mini-j5012-r39:
+  avocado-bsp-recomputer-mini-j501x:
     source:
       type: package
       version: "*"        # or pin an exact version
@@ -20,7 +20,7 @@ extensions:
 runtimes:
   my-runtime:
     extensions:
-      - avocado-bsp-recomputer-mini-j5012-r39
+      - avocado-bsp-recomputer-mini-j501x
 ```
 
 Then install and build:
